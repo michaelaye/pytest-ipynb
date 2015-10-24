@@ -25,8 +25,10 @@ Features
 
 -  Discover files named ``test*.ipynb``
 -  Run each cell of the notebook as a unit test (just use ``assert``)
--  First line of each cell is the test name, either as docstring,
+-  First line of each cell is the test name, either as docstring, 
    comment or function name
+-  When written as a function name, pytest's `monkeypatch` can be used 
+   and will be discovered when run in the Terminal.
 -  A cell named ``fixture*`` or ``setup*`` is run before each of the
    following unit tests as a fixture
 -  IPython notebook kernel is restarted after each test
